@@ -11,13 +11,41 @@ const connect = function() {
 
   conn.on("connect", () => {
     console.log("pumkin' spice latte connected");
-    conn.write("Name: Duh");
+    conn.write("Name: Moo");
+
+    
+    /* conn.write("Move: down");
+    conn.write("Move: left");
+    conn.write("Move: right"); */
+    
     
   });
-
-  conn.on("data", (data) => {
-    console.log("Move: up");
+  conn.on("connect", (connect) => {
+    console.log("plese work");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
+    conn.write("Move: up");
   });
+
+ 
 
  
   return conn;
@@ -26,4 +54,4 @@ const connect = function() {
 
 
 
-module.exports = connect;
+module.exports = {connect};
