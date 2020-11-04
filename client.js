@@ -14,36 +14,10 @@ const connect = function() {
     conn.write("Name: Moo");
 
     
-    /* conn.write("Move: down");
-    conn.write("Move: left");
-    conn.write("Move: right"); */
     
     
   });
-  conn.on("connect", (connect) => {
-    console.log("plese work");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-    conn.write("Move: up");
-  });
+  
 
  
 
