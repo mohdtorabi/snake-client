@@ -11,16 +11,22 @@ console.log('Connecting ...');
 
 connect();
 
- const setupInput = function() {
+const handleUserInpu = function(data) {
+  if (data === '\u0003') {
+    process.exit();
+  }
+};
+const setupInput = function() {
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
   stdin.resume();
-  stdin.handleUserInpu("data", (data) => {
-    if (data === '\u0003') {
-      process.exit();
-    }
+  stdin.on("data", (data) => {
+
+    handleUserInpu(data);
   });
   return stdin;
 };
+setupInput();
  
+
