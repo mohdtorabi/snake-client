@@ -9,6 +9,10 @@ const connect = function() {
   // interpret incoming data as text
   conn.setEncoding('utf8');
 
+  conn.on("connect", () => {
+    console.log("pumkin' spice latte connected");
+  });
+
   return conn;
 };
 
