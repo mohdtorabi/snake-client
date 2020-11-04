@@ -11,8 +11,15 @@ const connect = function() {
 
   conn.on("connect", () => {
     console.log("pumkin' spice latte connected");
+    conn.write("Name: Duh");
+    
   });
 
+  conn.on("data", (data) => {
+    console.log("Move: up");
+  });
+
+ 
   return conn;
 };
 
