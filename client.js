@@ -12,6 +12,7 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("pumkin' spice latte connected");
     conn.write("Name: Moo");
+    conn.write("Say: Boooo!");
 
     
     
